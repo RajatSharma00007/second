@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/9337035.gif);
+    background-size: cover;
+    background-position: 50%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh; 
+    background-color: ;
+    
+
+}
+
+.left {
+    font-size: large;
+    font-family: monospace;
+        color: white;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.item {
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw; 
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    display: none;
+    font-size: 3vh; 
+    cursor: pointer;
+    color: white;
+    padding: 1vh; 
+    border-radius: 5vw;
+}
+
+#hidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color:antiquewhite;
+    padding: 2vh;
+    z-index: 1000;
+    
+}
+
+#hidebar.active {
+    display: block;
+}
+
+.sidebar-item {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2vh; 
+}
+
+.sidebar-item:hover {
+    text-decoration: underline;
+    color: crimson;
+}
+
+.close {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2.4vh; 
+    cursor: pointer;
+    margin-bottom: 2vh; 
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+    .sidebar {
+        display: block;
+    }
+}
+.terms{
+    background-color: rgba(255, 255, 255, 0.8); ;
+    padding: 2vw;
+    border-radius: 3vh;
+    max-width: 70%;
+    width: 60%;
+    margin: 0 auto;
+
+}
+h1{
+    
+    color: red;
+}
+p,ul{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: larger;
+    line-height: 1.5;
+}
+p{
+    font-style: italic;
+}

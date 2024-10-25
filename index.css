@@ -1,0 +1,187 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+    background-color: rgb(236, 215, 95);
+    
+}
+
+.left {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 5px;
+}
+
+.item {
+    color: black;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    display: none;
+    font-size: 3vh;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    padding: 1vh;
+    border-radius: 5vw;
+}
+
+#hidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: antiquewhite;
+    padding: 2vh;
+    z-index: 1000;
+}
+
+#hidebar.active {
+    display: block;
+}
+
+.sidebar-item {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 2vh;
+}
+
+.sidebar-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.close {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2.4vh;
+    cursor: pointer;
+    margin-bottom: 2vh;
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+.body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: blue;
+    padding: 10vh;
+    border-radius: 5vh;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+h2 {
+    color: white;
+}
+
+.form {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.name1, .name2 {
+    display: flex;
+    gap: 5vw;
+}
+
+label {
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5vw;
+    background-color: #ffffff;
+    font-size: 2vh;
+}
+
+
+.button {
+    display: flex;
+    width: 10vw;
+    padding: 1vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: greenyellow;
+    font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 2vw;
+}
+
+input[type="password"], input[type="password"], textarea {
+    width: 60%;
+    padding: 0.8vw;
+    border: none;
+    border-radius: 5vw;
+    background-color: #fff;
+    font-size: 2vh;
+    margin-bottom: 2vw;
+}
+
+.details {
+    color: #fff; 
+    font-weight: bold;
+}

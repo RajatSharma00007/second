@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <p>DEMON SLAYER</p>
+        </div>
+        <nav class="right">
+            <a href="home.html" class="item">Home</a>
+            <a href="content.html" class="item">Content</a>
+            <a href="about.html" class="item">About</a>
+            <a href="terms.html" class="item">Terms & conditions</a>
+            <a href="mailto:" class="item">Contact</a>
+        </nav>
+        <div class="sidebar" onclick="toggleSidebar()">
+            &#9776;
+        </div>
+    </header>
+    <div id="hidebar">
+        <button class="close" onclick="toggleSidebar()">X</button>
+        <a href="home.html" class="sidebar-item">Home</a>
+        <a href="content.html" class="sidebar-item">Content</a>
+        <a href="about.html" class="sidebar-item">About</a>
+        <a href="terms.html" class="sidebar-item">Terms & conditions</a>
+        <a href="mailto:" class="sidebar-item">Contact</a>
+    </div>
+    <script src="index.js"></script>
+    <div class="body">
+        <div class="form-container">
+            <h2>Form</h2>
+            <form id="details" onsubmit="submitForm(event)">
+                <div class="form">
+                    <label for="first-name">Full name</label>
+                    <div class="name1">
+                        <input type="text" id="first-name" placeholder="First Name">
+                        <input type="text" id="last-name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="password">
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                </div>
+                <button class="button" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

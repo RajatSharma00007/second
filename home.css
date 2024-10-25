@@ -1,0 +1,126 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://wallpaperaccess.com/full/9078512.gif);
+    background-size:cover;
+    background-position: 50%;
+    
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+p{
+    display: flex;
+    color: #fff;
+    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 15vw;
+    height: 30vw;
+    width: 30vw;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh; 
+    background-color: white;
+    
+   
+}
+
+.left {
+    font-size: x-large;
+    color: black;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 5px;
+    
+}
+
+.item {
+    font-size: large;
+    color: black;
+    text-decoration: none;
+    margin-right: 2vw; 
+}
+
+.item:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    display: none;
+    font-size: 3vh; 
+    cursor: pointer;
+    color:black;
+    padding: 1vh; 
+    border-radius: 5vw;
+}
+
+#hidebar {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: beige;
+    padding: 2vh;
+    z-index: 100;
+    
+}
+
+#hidebar.active {
+    display: block;
+}
+
+.sidebar-item {
+    display: block;
+    color: red;
+    text-decoration: none;
+    margin-bottom: 2vh; 
+}
+
+.sidebar-item:hover {
+    text-decoration: underline;
+}
+
+.close {
+    background: none;
+    border: none;
+    color:red;
+    font-size: 2.4vh; 
+    cursor: pointer;
+    margin-bottom: 2vh; 
+}
+
+@media (max-width: 768px) {
+    .right {
+        display: none;
+    }
+    .sidebar {
+        display: block;
+    }
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
